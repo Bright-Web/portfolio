@@ -21,7 +21,8 @@
     <ul id="menu">
         <li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
         <li data-menuanchor="about" class=""><a href="#about">About</a></li>
-        <li data-menuanchor="project" class=""><a href="#project">Project</a></li>
+        <li data-menuanchor="featured" class=""><a href="#featured">Featured</a></li>
+        <li data-menuanchor="projects" class=""><a href="#projects">Projects</a></li>
         <li data-menuanchor="contact" class=""><a href="#contact">Contact</a></li>
     </ul>
     <div id="fullPage" class="main">
@@ -34,47 +35,57 @@
         <div class="section s2" data-anchor="about">
             <h2>About</h2>
         </div>
-        <div class="section s3" data-anchor="project">
-            <div class="project">
-                <div class="project__content">
-                    <h2>Black Estate </h2>
-                    <h3>Website Re-design</h3>
-                    <p>This was a course project where I was asked to re-design the existing Black Estate website.</p>
-                    <p>This was build using HTML, CSS and Javascript</p>
-                    <a class="button" href="#">Visit Website</a>
-                </div>
-                <div class="project__image">
-                    <img src="https://i.ibb.co/qD3b7p4/blackestate.jpg" alt="blackestate" border="0">
-                </div>
-            </div>
+        <div class="section s3" data-anchor="featured">
+            <h2>Meal Plan App</h2>
+            <h3>Featured Project</h3>
         </div>
-        <div class="section s4" data-anchor="project-2">
-            <div class="project">
-                <div class="project__content">
-                    <h2>Car Rental App </h2>
-                    <h3>Design and Build</h3>
-                    <p>This was a course project where I was asked to re-design the existing Black Estate website.</p>
-                    <p>This was build using HTML, CSS and Javascript</p>
-                    <a class="button" href="#">Visit Website</a>
-                </div>
-                <div class="project__image">
-                    <img src="https://i.ibb.co/XLrZb7k/rental.jpg" alt="rental" border="0">
-                </div>
-            </div>
-        </div>
-        <div class="section s4" data-anchor="project-2">
-            <div class="project">
-                <div class="project__content">
-                    <h2>MEAl PLAN</h2>
-                    <h3>Design and Build</h3>
-                    <p>This was a course project where I was asked to re-design the existing Black Estate website.</p>
-                    <p>This was build using HTML, CSS and Javascript</p>
-                    <a class="button" href="#">Visit Website</a>
-                </div>
-                <div class="project__image">
-                    <img src="https://i.ibb.co/Pw1LwgY/mealplanapp.jpg" alt="mealplanapp" border="0">
+        <div class="section s4" data-anchor="projects">
+            <div class="slide">
+                <div class="project">
+                    <div class="project__content">
+                        <h2>Black Estate </h2>
+                        <h3>Website Re-design</h3>
+                        <p>This was a course project where I was asked to re-design the existing Black Estate website.
+                        </p>
+                        <p>This was build using HTML, CSS and Javascript</p>
+                        <a class="button" href="#">Visit Website</a>
+                    </div>
+                    <div class="project__image">
+                        <img src="https://i.ibb.co/qD3b7p4/blackestate.jpg" alt="blackestate" border="0">
+                    </div>
                 </div>
             </div>
+            <div class="slide">
+                <div class="project">
+                    <div class="project__content">
+                        <h2>TOURENTAL </h2>
+                        <h3>Design and Build</h3>
+                        <p>This was a course project where I was asked to re-design the existing Black Estate website.
+                        </p>
+                        <p>This was build using HTML, CSS and Javascript</p>
+                        <a class="button" href="#">Visit Website</a>
+                    </div>
+                    <div class="project__image">
+                        <img src="https://i.ibb.co/XLrZb7k/rental.jpg" alt="rental" border="0">
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="project">
+                    <div class="project__content">
+                        <h2>Hopped Up</h2>
+                        <h3>Design and Build</h3>
+                        <p>This was a course project where I was asked to re-design the existing Black Estate website.
+                        </p>
+                        <p>This was build using HTML, CSS and Javascript</p>
+                        <a class="button" href="#">Visit Website</a>
+                    </div>
+                    <div class="project__image">
+                        <img src="https://i.ibb.co/yQNKgxT/Hopped-Up2.png" alt="Hopped-Up" border="0">
+                    </div>
+                </div>
+            </div>
+
         </div>
         <div class="section s5" data-anchor="contact">
             <h2>contact</h2>
@@ -87,7 +98,7 @@
         new fullpage('#fullPage', {
             autoScrolling: true,
             navigation: true,
-            anchors: ['home', 'about', 'project', 'project-2', 'project-3', 'contact'],
+            anchors: ['home', 'about', 'featured', 'projects', 'contact'],
             menu: '#menu'
         })
     </script>

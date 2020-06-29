@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css"
+        integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&family=Roboto+Condensed:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/dist/css/main.min.css">
+
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <ul id="menu">
+        <li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
+        <li data-menuanchor="about" class=""><a href="#about">About</a></li>
+        <li data-menuanchor="project" class=""><a href="#project">Project</a></li>
+        <li data-menuanchor="contact" class=""><a href="#contact">Contact</a></li>
+    </ul>
+    <div id="fullPage" class="main">
+        <div class="section s1" data-anchor="home">
+            <div class="home">
+                <h1>hello</br>I'm Anton</h1>
+                <h3>Front-end developer</h3>
+            </div>
+        </div>
+        <div class="section s2" data-anchor="about">
+            <h2>About</h2>
+        </div>
+        <div class="section s3" data-anchor="project">
+            <div class="project">
+                <div class="project__content">
+                    <h2>Black Estate </h2>
+                    <h3>Website Re-design</h3>
+                    <p>This was a course project where I was asked to re-design the existing Black Estate website.</p>
+                    <p>This was build using HTML, CSS and Javascript</p>
+                    <a class="button" href="#">Visit Website</a>
+                </div>
+                <div class="project__image">
+                    <img src="https://i.ibb.co/qD3b7p4/blackestate.jpg" alt="blackestate" border="0">
+                </div>
+            </div>
+        </div>
+        <div class="section s4" data-anchor="project-2">
+            <div class="project">
+                <div class="project__content">
+                    <h2>Car Rental App </h2>
+                    <h3>Design and Build</h3>
+                    <p>This was a course project where I was asked to re-design the existing Black Estate website.</p>
+                    <p>This was build using HTML, CSS and Javascript</p>
+                    <a class="button" href="#">Visit Website</a>
+                </div>
+                <div class="project__image">
+                    <img src="https://i.ibb.co/XLrZb7k/rental.jpg" alt="rental" border="0">
+                </div>
+            </div>
+        </div>
+        <div class="section s4" data-anchor="project-2">
+            <div class="project">
+                <div class="project__content">
+                    <h2>MEAl PLAN</h2>
+                    <h3>Design and Build</h3>
+                    <p>This was a course project where I was asked to re-design the existing Black Estate website.</p>
+                    <p>This was build using HTML, CSS and Javascript</p>
+                    <a class="button" href="#">Visit Website</a>
+                </div>
+                <div class="project__image">
+                    <img src="https://i.ibb.co/Pw1LwgY/mealplanapp.jpg" alt="mealplanapp" border="0">
+                </div>
+            </div>
+        </div>
+        <div class="section s5" data-anchor="contact">
+            <h2>contact</h2>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"
+        integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script>
+    <script>
+        new fullpage('#fullPage', {
+            autoScrolling: true,
+            navigation: true,
+            anchors: ['home', 'about', 'project', 'project-2', 'project-3', 'contact'],
+            menu: '#menu'
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+
+</html>
