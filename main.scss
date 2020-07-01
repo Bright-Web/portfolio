@@ -1,3 +1,22 @@
+//Breakpoints
+$screen-sm-max: 720px;
+$screen-md-min: 1024px;
+$screen-lg-min: 1280px;
+
+//Mixins
+
+//Media Queries
+@mixin sm {
+  @media (max-width: #{$screen-sm-max}) {
+    @content;
+  }
+}
+@mixin md {
+  @media (min-width: #{$screen-sm-max}) and (max-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
 body {
   background: radial-gradient(#25354a, #15202e);
   color: white;
@@ -22,6 +41,13 @@ h1 {
   font-weight: 900;
   margin: 0.5rem 0;
   line-height: 9rem;
+@include md {
+  font-size: 6rem;
+    font-weight: 900;
+    margin: 0.5rem 0;
+    line-height: 6rem;
+}
+
 }
 h2 {
   font-size: 6rem;
@@ -37,6 +63,8 @@ h3 {
 
 p {
   font-weight: 300;
+  line-height: 1.7rem;
+  font-size: 1.1rem;
 }
 
 .button {
@@ -52,6 +80,8 @@ p {
 
 .section {
   margin: 0 5rem;
+  @include md {
+  }
 }
 
 #fp-nav ul li a span,
@@ -101,6 +131,12 @@ p {
   width: 100%;
   margin: 0 5rem;
   right: 0;
+  @include md {
+    justify-content: flex-start;
+    margin: 0 4rem;
+    right: unset;
+    padding: 0;
+  }
 }
 
 #fp-nav ul li a span,
@@ -150,28 +186,49 @@ p {
     flex-direction: column;
     justify-content: flex-end;
     margin-bottom: 15rem;
+    @include md {
+      margin-bottom: 20rem;
+    }
 }
 
 .project {
   display: flex;
   margin: 0 4rem;
+  @include md {
+    flex-direction: column;
+    margin: 0px 2px;
+  }
   &__content {
     width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @include md {
+     width: 100%;
+    }
     h2 {
       white-space: nowrap;
+      @include md {
+        font-size: 3rem;
+      }
     }
   }
   &__image {
     width: 60%;
     z-index: -1;
+    @include md {
+      margin-top: 2rem;
+      width: 100%;
+     }
 
     img {
       width: 100%;
-      box-shadow: 0px 3px 30px #ffffff12;
     }
+  }
+  p {
+    @include md {
+      margin-top: 0;
+     }
   }
 }
 
@@ -189,4 +246,10 @@ p {
 .fp-controlArrow.fp-prev {
   left: 0;
   border-width: 30px 20px 30px 0;
+}
+
+#fp-nav.fp-right {
+ @include md {
+  display: none;
+ }
 }
