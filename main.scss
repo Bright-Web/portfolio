@@ -77,6 +77,7 @@ p {
   margin-top: 1rem;
   width: max-content;
   transition: 0.2s ease-in-out;
+  margin-right: 1rem;
   &:hover {
     background-color: #b4d139;
     color: #223145;
@@ -216,7 +217,12 @@ p {
       @include md {
         font-size: 3rem;
       }
+
     }
+    p {
+      padding-right: 1rem;
+  
+        }
   }
   &__image {
     width: 60%;
